@@ -1,1 +1,33 @@
 # Medi_assistant-
+🧬 Overview
+Medi Assistant is an AI-powered medical question-answering assistant designed to provide trustworthy, document-based health information using Retrieval-Augmented Generation (RAG).
+The system extracts text from medical PDFs, converts them into embeddings, stores them inside a FAISS vector database, and answers user medical queries using Groq LLaMA 3.1.
+It is designed for accuracy, fast inference, multilingual support, and offline document search.
+
+
+🚀 Features
+🔍 RAG-based Medical Q&A
+  Embeds medical PDFs using HuggingFace MiniLM
+  Stores vectors with FAISS
+  Retrieves relevant chunks (top-k search)
+  Uses Groq LLaMA 3.1 8B for generating accurate answers
+
+💬 Streamlit Chat Interface
+  Modern, dark-themed UI
+  Adjustable creativity (temperature), max tokens
+  Adjustable number of retrieved documents
+  Lives completely on your machine
+
+📚 Medical Knowledge Base
+  Load large medical encyclopedias (PDF)
+  Automated text splitting (500 chars/chunk)
+  Designed for performance and precision
+
+
+🙌 Credits
+  Developed by Bipin Dahat
+  Powered by:
+  🧠 LangChain
+  ⚡ Groq LLaMA-3.1🔎 FAISS
+  🤗 HuggingFace Embeddings
+  🖥️ Streamlit
