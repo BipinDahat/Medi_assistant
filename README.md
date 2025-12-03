@@ -23,6 +23,37 @@ It is designed for accuracy, fast inference, multilingual support, and offline d
   Automated text splitting (500 chars/chunk)
   Designed for performance and precision
 
+🔬 Architecture Diagram (RAG Workflow)
+            ┌────────────────────────┐
+            │   Medical PDF Files    │
+            └────────────┬───────────┘
+                         │
+                         ▼
+        ┌────────────────────────────────────┐
+        │ Text Splitting (500 char chunks)   │
+        └────────────┬───────────────────────┘
+                     │
+                     ▼
+            ┌─────────────────────────────┐
+            │ MiniLM Embeddings (HF)      │
+            └────────────┬────────────────┘
+                         │
+                         ▼
+            ┌─────────────────────────────┐
+            │ FAISS Vector Database        │
+            └────────────┬────────────────┘
+                         │
+                         ▼
+            ┌───────────────────────────────┐
+            │ Groq LLaMA-3.1 8B (Chat API)   │
+            └────────────┬──────────────────┘
+                         │
+                         ▼
+            ┌─────────────────────────────┐
+            │ Medi Assistant UI (Streamlit)│
+            └─────────────────────────────┘
+
+
 
 🙌 Credits
   Developed by Bipin Dahat
