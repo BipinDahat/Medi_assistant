@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 🧬 Overview
 
 Medi Assistant is an AI-powered medical question-answering assistant designed to provide trustworthy, document-based health information using Retrieval-Augmented Generation (RAG).
